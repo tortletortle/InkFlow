@@ -1,0 +1,253 @@
+{
+  "source_sha256": "808b681f1e02ea7ab4bc70a1733d7377901306fd4e824fd91593e741df90f1c7",
+  "syntax_scripts": 27,
+  "runs": [
+    {
+      "software": true,
+      "ready": true,
+      "glVersion": null,
+      "glError": null,
+      "start": {
+        "wetCells": 287,
+        "surfaceTriangles": 942,
+        "flowing": 142,
+        "rapids": 3,
+        "falls": 0,
+        "foam": 0
+      },
+      "wetMass": 4.215328505698981,
+      "initialBudget": 9.583839134736296e-16,
+      "after": {
+        "wetCells": 282,
+        "surfaceTriangles": 931,
+        "flowing": 27,
+        "rapids": 0,
+        "falls": 0,
+        "foam": 0
+      },
+      "waterError": 3.1370942578506706e-15,
+      "soilError": 3.394666662883182e-16,
+      "runoff": 0.15044715685543114,
+      "pure": true,
+      "visible": 77,
+      "pick": {
+        "x": 113,
+        "z": 69,
+        "pt": [
+          905.6563040971613,
+          533.054973882288
+        ]
+      },
+      "controlled": {
+        "dry": {
+          "wetCells": 0,
+          "surfaceTriangles": 0,
+          "flowing": 0,
+          "rapids": 0,
+          "falls": 0,
+          "foam": 0
+        },
+        "pond": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 0,
+          "rapids": 0,
+          "falls": 0,
+          "foam": 0
+        },
+        "flat": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 0,
+          "foam": 0
+        },
+        "rapid": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 1,
+          "rapids": 1,
+          "falls": 0,
+          "foam": 0
+        },
+        "fall": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3
+        },
+        "dryTarget": {
+          "wetCells": 1,
+          "surfaceTriangles": 6,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3
+        }
+      },
+      "pointer": {
+        "before": 4.277692456410281,
+        "after": 4.477692466104504,
+        "waterError": 3.1260528693593146e-15,
+        "status": "引水 · 补充水分 · 47 格 (113, 69)"
+      },
+      "pageErrors": [],
+      "requested": "canvas"
+    },
+    {
+      "software": true,
+      "ready": true,
+      "glVersion": null,
+      "glError": null,
+      "start": {
+        "wetCells": 291,
+        "surfaceTriangles": 950,
+        "flowing": 168,
+        "rapids": 7,
+        "falls": 0,
+        "foam": 0
+      },
+      "wetMass": 4.225457491695881,
+      "initialBudget": 1.5060318640299894e-15,
+      "after": {
+        "wetCells": 282,
+        "surfaceTriangles": 931,
+        "flowing": 27,
+        "rapids": 0,
+        "falls": 0,
+        "foam": 0
+      },
+      "waterError": 2.5332455355733237e-16,
+      "soilError": 5.091999994324774e-16,
+      "runoff": 0.1457646925894288,
+      "pure": true,
+      "visible": 77,
+      "pick": {
+        "x": 113,
+        "z": 69,
+        "pt": [
+          905.6563040971613,
+          533.054973882288
+        ]
+      },
+      "controlled": {
+        "dry": {
+          "wetCells": 0,
+          "surfaceTriangles": 0,
+          "flowing": 0,
+          "rapids": 0,
+          "falls": 0,
+          "foam": 0
+        },
+        "pond": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 0,
+          "rapids": 0,
+          "falls": 0,
+          "foam": 0
+        },
+        "flat": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 0,
+          "foam": 0
+        },
+        "rapid": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 1,
+          "rapids": 1,
+          "falls": 0,
+          "foam": 0
+        },
+        "fall": {
+          "wetCells": 2,
+          "surfaceTriangles": 12,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3
+        },
+        "dryTarget": {
+          "wetCells": 1,
+          "surfaceTriangles": 6,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3
+        }
+      },
+      "pointer": {
+        "before": 4.259814204884802,
+        "after": 4.459814214579024,
+        "waterError": 3.78636904082321e-16,
+        "status": "引水 · 补充水分 · 47 格 (113, 69)"
+      },
+      "pageErrors": [],
+      "requested": "webgl"
+    }
+  ],
+  "additional": {
+    "actual": {
+      "edge": 66,
+      "expected": 66,
+      "totalOut": 0.05,
+      "dominantOut": 0.025961538461538466,
+      "waterVisual": {
+        "wetCells": 4,
+        "surfaceTriangles": 24,
+        "flowing": 1,
+        "rapids": 0,
+        "falls": 1,
+        "foam": 3
+      }
+    },
+    "seeds": [
+      {
+        "seed": 27,
+        "initialWater": 0.46606105484586957,
+        "finalWater": 0.9738462258806305,
+        "runoff": 0.19605646461853457,
+        "waterError": 3.64006616408134e-14,
+        "soilError": 1.276867567097996e-15,
+        "finite": true,
+        "nonnegative": true,
+        "dominantBound": true
+      },
+      {
+        "seed": 91,
+        "initialWater": 0.49275397954868627,
+        "finalWater": 0.9736511860175734,
+        "runoff": 0.19421306991729914,
+        "waterError": 3.7542438580314784e-14,
+        "soilError": 1.0927130824119264e-15,
+        "finite": true,
+        "nonnegative": true,
+        "dominantBound": true
+      },
+      {
+        "seed": 173,
+        "initialWater": 0.48000960560182393,
+        "finalWater": 1.8518697846322874,
+        "runoff": 0.38113675369375394,
+        "waterError": 5.479538466289446e-14,
+        "soilError": 7.3006752615696145e-16,
+        "finite": true,
+        "nonnegative": true,
+        "dominantBound": true
+      }
+    ]
+  },
+  "limitations": [
+    "Both Chromium setups used Canvas fallback; native WebGL not tested.",
+    "The display uses most recent dominant-edge discharge volume, not physical velocity or complete flow vector field; dry cells can show recent runoff streaks.",
+    "Falls are steep-slope whitewater proxies, not free-falling water or fluid dynamics; default scene had no verified persistent waterfalls.",
+    "No true reflection, fog particles, physical mobile device or long-run validation."
+  ]
+}
