@@ -1,0 +1,151 @@
+{
+  "file_sha256": "cdf9fe724c53e67e7467e80a12498a954f5e1fa459f9c1266e566bfe8da9c490",
+  "syntax_scripts": 26,
+  "results": [
+    {
+      "software": true,
+      "ready": true,
+      "err": "",
+      "mode": true,
+      "seed": 27,
+      "stats": {
+        "ready": true,
+        "error": "",
+        "plants": 107,
+        "channels": 0,
+        "animals": 87,
+        "territories": 0,
+        "species": {
+          "grass": 68,
+          "shrub": 0,
+          "pine": 33,
+          "reed": 6
+        },
+        "vertices": 9000,
+        "indices": 52836
+      },
+      "count": 29,
+      "hit": {
+        "x": 69,
+        "z": 12,
+        "i": 1509,
+        "s": [
+          631.4253956023795,
+          249.27837324129635
+        ]
+      },
+      "mass": 1,
+      "cells": 154,
+      "min": 0,
+      "maxError": 1.1102230246251565e-15,
+      "moved": 1.0394747308281647,
+      "unchanged": true,
+      "exact": true,
+      "canvasWidth": 1040,
+      "canvasHeight": 650,
+      "edit": {
+        "status": "落墨 · 地表积墨 · 47 格 (69, 12)",
+        "massBefore": 8.72624978892307,
+        "massAfter": 8.72624978892306,
+        "moved": 1.1439399921793416,
+        "waterError": 5.490433230154642e-15,
+        "soilError": 0
+      },
+      "pageErrors": [],
+      "requested": "software"
+    },
+    {
+      "software": true,
+      "ready": true,
+      "err": "",
+      "mode": true,
+      "seed": 27,
+      "stats": {
+        "ready": true,
+        "error": "",
+        "plants": 107,
+        "channels": 0,
+        "animals": 87,
+        "territories": 0,
+        "species": {
+          "grass": 68,
+          "shrub": 0,
+          "pine": 33,
+          "reed": 6
+        },
+        "vertices": 9000,
+        "indices": 52836
+      },
+      "count": 29,
+      "hit": {
+        "x": 69,
+        "z": 12,
+        "i": 1509,
+        "s": [
+          631.4253956023795,
+          249.27837324129635
+        ]
+      },
+      "mass": 1.0000000000000002,
+      "cells": 154,
+      "min": 0,
+      "maxError": 8.881784197001252e-16,
+      "moved": 1.039467190664379,
+      "unchanged": true,
+      "exact": true,
+      "canvasWidth": 1040,
+      "canvasHeight": 650,
+      "edit": {
+        "status": "落墨 · 地表积墨 · 47 格 (69, 12)",
+        "massBefore": 8.72624978892307,
+        "massAfter": 8.726249788923072,
+        "moved": 1.1467899842280884,
+        "waterError": 9.2286629825797e-15,
+        "soilError": 0
+      },
+      "pageErrors": [],
+      "requested": "webgl"
+    }
+  ],
+  "limitations": [
+    "Both Chromium launch configurations fell back to software Canvas. Native WebGL shader compile and physical GPU rendering not verified.",
+    "Short simulations, seed 27, plus synthetic transport cases; no long-run ecosystem stability test.",
+    "Mobile viewport simulation only, not a physical mobile device.",
+    "Design image is aspirational; distant mountain layering and full painterly quality not implemented."
+  ],
+  "additional": {
+    "flat": {
+      "mass": 0.9999999999999998,
+      "centroid": 3.9999999999999982,
+      "nonnegative": true
+    },
+    "slopeDry": {
+      "mass": 0.9999999999999996,
+      "centroid": 4.000000000000003,
+      "nonnegative": true
+    },
+    "slopeWet": {
+      "mass": 1,
+      "centroid": 4.43446978253953,
+      "nonnegative": true
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mode": true,
+      "canvasVisible": true
+    },
+    "toggleOff": {
+      "enabled": false,
+      "mass": 1,
+      "source": 1
+    },
+    "errors": []
+  },
+  "checks": {
+    "syntax_scripts_passed": 26,
+    "browser_pointer_strokes": true,
+    "native_webgl_verified": false,
+    "source_matches_sha256": true
+  }
+}
