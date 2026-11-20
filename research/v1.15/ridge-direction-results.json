@@ -1,0 +1,1178 @@
+{
+  "experiment": "Analytic Gaussian ridge normal-direction recovery; axial angles modulo pi; synthetic unit-grid data, not full terrain renderer.",
+  "size": [
+    96,
+    96
+  ],
+  "ridgeWidth": 10,
+  "angles": [
+    17,
+    43,
+    79,
+    121,
+    158
+  ],
+  "seeds": [
+    27,
+    91,
+    173
+  ],
+  "smoothingSigma": 1.8,
+  "noiseLevels": [
+    0,
+    0.015
+  ],
+  "region": "abs(normal-coordinate)<=4 and abs(tangent-coordinate)<=30; edges excluded",
+  "results": [
+    {
+      "noise_amplitude": 0,
+      "aggregate": {
+        "fixed": {
+          "n": 7206,
+          "mean_deg": 44.012,
+          "p90_deg": 79,
+          "within_15_pct": 0
+        },
+        "rawGradient": {
+          "n": 7206,
+          "mean_deg": 0.051,
+          "p90_deg": 0.071,
+          "within_15_pct": 100
+        },
+        "smoothedGradient": {
+          "n": 7206,
+          "mean_deg": 0.049,
+          "p90_deg": 0.069,
+          "within_15_pct": 100
+        },
+        "rawHessian": {
+          "n": 7206,
+          "mean_deg": 0.024,
+          "p90_deg": 0.034,
+          "within_15_pct": 100
+        },
+        "smoothedHessian": {
+          "n": 7206,
+          "mean_deg": 0.024,
+          "p90_deg": 0.033,
+          "within_15_pct": 100
+        }
+      },
+      "by_angle": {
+        "17": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 17,
+                "p90_deg": 17,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.065,
+                "p90_deg": 0.066,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.063,
+                "p90_deg": 0.064,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.031,
+                "p90_deg": 0.033,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.03,
+                "p90_deg": 0.032,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 17,
+                "p90_deg": 17,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.065,
+                "p90_deg": 0.066,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.063,
+                "p90_deg": 0.064,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.031,
+                "p90_deg": 0.033,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.03,
+                "p90_deg": 0.032,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 17,
+                "p90_deg": 17,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.065,
+                "p90_deg": 0.066,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.063,
+                "p90_deg": 0.064,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.031,
+                "p90_deg": 0.033,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.03,
+                "p90_deg": 0.032,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "43": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 43,
+                "p90_deg": 43,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.01,
+                "p90_deg": 0.01,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.009,
+                "p90_deg": 0.01,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.005,
+                "p90_deg": 0.005,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.005,
+                "p90_deg": 0.005,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 43,
+                "p90_deg": 43,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.01,
+                "p90_deg": 0.01,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.009,
+                "p90_deg": 0.01,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.005,
+                "p90_deg": 0.005,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.005,
+                "p90_deg": 0.005,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 43,
+                "p90_deg": 43,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.01,
+                "p90_deg": 0.01,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.009,
+                "p90_deg": 0.01,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.005,
+                "p90_deg": 0.005,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.005,
+                "p90_deg": 0.005,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "79": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 79,
+                "p90_deg": 79,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.049,
+                "p90_deg": 0.05,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.047,
+                "p90_deg": 0.048,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.023,
+                "p90_deg": 0.025,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.023,
+                "p90_deg": 0.024,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 79,
+                "p90_deg": 79,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.049,
+                "p90_deg": 0.05,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.047,
+                "p90_deg": 0.048,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.023,
+                "p90_deg": 0.025,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.023,
+                "p90_deg": 0.024,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 79,
+                "p90_deg": 79,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.049,
+                "p90_deg": 0.05,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.047,
+                "p90_deg": 0.048,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.023,
+                "p90_deg": 0.025,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.023,
+                "p90_deg": 0.024,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "121": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 482,
+                "mean_deg": 59,
+                "p90_deg": 59,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 482,
+                "mean_deg": 0.058,
+                "p90_deg": 0.059,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 482,
+                "mean_deg": 0.057,
+                "p90_deg": 0.058,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 482,
+                "mean_deg": 0.028,
+                "p90_deg": 0.03,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 482,
+                "mean_deg": 0.027,
+                "p90_deg": 0.029,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 482,
+                "mean_deg": 59,
+                "p90_deg": 59,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 482,
+                "mean_deg": 0.058,
+                "p90_deg": 0.059,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 482,
+                "mean_deg": 0.057,
+                "p90_deg": 0.058,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 482,
+                "mean_deg": 0.028,
+                "p90_deg": 0.03,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 482,
+                "mean_deg": 0.027,
+                "p90_deg": 0.029,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 482,
+                "mean_deg": 59,
+                "p90_deg": 59,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 482,
+                "mean_deg": 0.058,
+                "p90_deg": 0.059,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 482,
+                "mean_deg": 0.057,
+                "p90_deg": 0.058,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 482,
+                "mean_deg": 0.028,
+                "p90_deg": 0.03,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 482,
+                "mean_deg": 0.027,
+                "p90_deg": 0.029,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "158": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 22,
+                "p90_deg": 22,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.07,
+                "p90_deg": 0.072,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.068,
+                "p90_deg": 0.069,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.034,
+                "p90_deg": 0.036,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.033,
+                "p90_deg": 0.035,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 22,
+                "p90_deg": 22,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.07,
+                "p90_deg": 0.072,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.068,
+                "p90_deg": 0.069,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.034,
+                "p90_deg": 0.036,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.033,
+                "p90_deg": 0.035,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 22,
+                "p90_deg": 22,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 0.07,
+                "p90_deg": 0.072,
+                "within_15_pct": 100
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 0.068,
+                "p90_deg": 0.069,
+                "within_15_pct": 100
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 0.034,
+                "p90_deg": 0.036,
+                "within_15_pct": 100
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 0.033,
+                "p90_deg": 0.035,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "noise_amplitude": 0.015,
+      "aggregate": {
+        "fixed": {
+          "n": 7206,
+          "mean_deg": 44.012,
+          "p90_deg": 79,
+          "within_15_pct": 0
+        },
+        "rawGradient": {
+          "n": 7206,
+          "mean_deg": 26.118,
+          "p90_deg": 60.474,
+          "within_15_pct": 40.24
+        },
+        "smoothedGradient": {
+          "n": 7206,
+          "mean_deg": 4.391,
+          "p90_deg": 9.035,
+          "within_15_pct": 94.14
+        },
+        "rawHessian": {
+          "n": 7206,
+          "mean_deg": 43.615,
+          "p90_deg": 81.062,
+          "within_15_pct": 18.42
+        },
+        "smoothedHessian": {
+          "n": 7206,
+          "mean_deg": 1.49,
+          "p90_deg": 3.032,
+          "within_15_pct": 100
+        }
+      },
+      "by_angle": {
+        "17": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 17,
+                "p90_deg": 17,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 26.416,
+                "p90_deg": 57.249,
+                "within_15_pct": 38.13
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.236,
+                "p90_deg": 9.413,
+                "within_15_pct": 94.17
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 44.091,
+                "p90_deg": 82.721,
+                "within_15_pct": 23.75
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.52,
+                "p90_deg": 2.961,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 17,
+                "p90_deg": 17,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 25.812,
+                "p90_deg": 64.936,
+                "within_15_pct": 41.67
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.027,
+                "p90_deg": 7.031,
+                "within_15_pct": 96.25
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 42.853,
+                "p90_deg": 79.49,
+                "within_15_pct": 22.5
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.439,
+                "p90_deg": 2.849,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 17,
+                "p90_deg": 17,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 26.422,
+                "p90_deg": 61.859,
+                "within_15_pct": 38.54
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.749,
+                "p90_deg": 11.092,
+                "within_15_pct": 93.13
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 44.32,
+                "p90_deg": 81.501,
+                "within_15_pct": 18.54
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.693,
+                "p90_deg": 3.503,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "43": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 43,
+                "p90_deg": 43,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 25.752,
+                "p90_deg": 59.824,
+                "within_15_pct": 39.58
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.64,
+                "p90_deg": 10.098,
+                "within_15_pct": 94.17
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 42.498,
+                "p90_deg": 76.37,
+                "within_15_pct": 11.46
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.478,
+                "p90_deg": 3.056,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 43,
+                "p90_deg": 43,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 25.59,
+                "p90_deg": 59.048,
+                "within_15_pct": 40.42
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 5.007,
+                "p90_deg": 10.033,
+                "within_15_pct": 92.92
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 43.562,
+                "p90_deg": 76.499,
+                "within_15_pct": 13.13
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.536,
+                "p90_deg": 3.059,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 43,
+                "p90_deg": 43,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 24.604,
+                "p90_deg": 54.797,
+                "within_15_pct": 45.21
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.75,
+                "p90_deg": 10.842,
+                "within_15_pct": 93.33
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 43.01,
+                "p90_deg": 73.553,
+                "within_15_pct": 11.04
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.401,
+                "p90_deg": 2.94,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "79": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 79,
+                "p90_deg": 79,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 26.36,
+                "p90_deg": 59.129,
+                "within_15_pct": 40.63
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.834,
+                "p90_deg": 11.751,
+                "within_15_pct": 92.92
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 43.964,
+                "p90_deg": 84.963,
+                "within_15_pct": 25.63
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.233,
+                "p90_deg": 2.334,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 79,
+                "p90_deg": 79,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 26.72,
+                "p90_deg": 65.493,
+                "within_15_pct": 40.83
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 3.55,
+                "p90_deg": 5.964,
+                "within_15_pct": 95
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 43.047,
+                "p90_deg": 82.862,
+                "within_15_pct": 28.33
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.382,
+                "p90_deg": 2.863,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 79,
+                "p90_deg": 79,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 26.009,
+                "p90_deg": 61.238,
+                "within_15_pct": 39.79
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.303,
+                "p90_deg": 8.054,
+                "within_15_pct": 94.79
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 44.906,
+                "p90_deg": 84.064,
+                "within_15_pct": 25.63
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.637,
+                "p90_deg": 3.4,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "121": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 482,
+                "mean_deg": 59,
+                "p90_deg": 59,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 482,
+                "mean_deg": 25.833,
+                "p90_deg": 58.961,
+                "within_15_pct": 40.25
+              },
+              "smoothedGradient": {
+                "n": 482,
+                "mean_deg": 4.773,
+                "p90_deg": 10.561,
+                "within_15_pct": 92.95
+              },
+              "rawHessian": {
+                "n": 482,
+                "mean_deg": 44.06,
+                "p90_deg": 75.816,
+                "within_15_pct": 12.45
+              },
+              "smoothedHessian": {
+                "n": 482,
+                "mean_deg": 1.768,
+                "p90_deg": 3.53,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 482,
+                "mean_deg": 59,
+                "p90_deg": 59,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 482,
+                "mean_deg": 25.706,
+                "p90_deg": 58.952,
+                "within_15_pct": 40.04
+              },
+              "smoothedGradient": {
+                "n": 482,
+                "mean_deg": 3.858,
+                "p90_deg": 6.907,
+                "within_15_pct": 95.02
+              },
+              "rawHessian": {
+                "n": 482,
+                "mean_deg": 42.327,
+                "p90_deg": 78.604,
+                "within_15_pct": 14.94
+              },
+              "smoothedHessian": {
+                "n": 482,
+                "mean_deg": 1.516,
+                "p90_deg": 3.139,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 482,
+                "mean_deg": 59,
+                "p90_deg": 59,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 482,
+                "mean_deg": 26.102,
+                "p90_deg": 61.638,
+                "within_15_pct": 40.25
+              },
+              "smoothedGradient": {
+                "n": 482,
+                "mean_deg": 4.305,
+                "p90_deg": 7.829,
+                "within_15_pct": 93.98
+              },
+              "rawHessian": {
+                "n": 482,
+                "mean_deg": 43.631,
+                "p90_deg": 78.702,
+                "within_15_pct": 13.28
+              },
+              "smoothedHessian": {
+                "n": 482,
+                "mean_deg": 1.292,
+                "p90_deg": 2.686,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ],
+        "158": [
+          {
+            "seed": 27,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 22,
+                "p90_deg": 22,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 26.589,
+                "p90_deg": 60.085,
+                "within_15_pct": 38.33
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 3.849,
+                "p90_deg": 6.59,
+                "within_15_pct": 95.83
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 44.363,
+                "p90_deg": 81.721,
+                "within_15_pct": 16.25
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.405,
+                "p90_deg": 2.83,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 91,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 22,
+                "p90_deg": 22,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 27.247,
+                "p90_deg": 64.304,
+                "within_15_pct": 39.58
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.051,
+                "p90_deg": 7.298,
+                "within_15_pct": 95
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 44.413,
+                "p90_deg": 81.524,
+                "within_15_pct": 20.83
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.499,
+                "p90_deg": 3.174,
+                "within_15_pct": 100
+              }
+            }
+          },
+          {
+            "seed": 173,
+            "metrics": {
+              "fixed": {
+                "n": 480,
+                "mean_deg": 22,
+                "p90_deg": 22,
+                "within_15_pct": 0
+              },
+              "rawGradient": {
+                "n": 480,
+                "mean_deg": 26.616,
+                "p90_deg": 63.618,
+                "within_15_pct": 40.42
+              },
+              "smoothedGradient": {
+                "n": 480,
+                "mean_deg": 4.928,
+                "p90_deg": 10.634,
+                "within_15_pct": 92.71
+              },
+              "rawHessian": {
+                "n": 480,
+                "mean_deg": 43.183,
+                "p90_deg": 81.647,
+                "within_15_pct": 18.54
+              },
+              "smoothedHessian": {
+                "n": 480,
+                "mean_deg": 1.546,
+                "p90_deg": 2.988,
+                "within_15_pct": 100
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Only straight Gaussian ridges and bounded independent uniform noise, chosen for known ground truth.",
+    "Tests height-field Hessian eigenvectors, not true surface principal curvature or full painterly rendering.",
+    "Direction accuracy is not evidence of artistic quality, frame rate, or temporal coherence. Fixed direction is a conceptual reference, not a measured V1.14 baseline.",
+    "No parameter sweep, real elevation test, or independent visual evaluation."
+  ]
+}
