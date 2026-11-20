@@ -1,0 +1,42 @@
+{
+  "n": 48,
+  "max": 2.0495186137532014e-13,
+  "visible": 29,
+  "hidden": 19,
+  "found": {
+    "x": 27,
+    "z": 23,
+    "s": [
+      316.3444281134318,
+      225.61668644232626
+    ],
+    "i": 2787
+  },
+  "waterError": 9.2286629825797e-15,
+  "soilError": 0,
+  "heightsExact": true,
+  "inkMassDisplay": 8.726249977946479,
+  "raiseBefore": 0.42960105027954,
+  "raiseAfter": 0.4646010502795367,
+  "waterAdded": 0.2005705621136599,
+  "post": {
+    "water": 1.6664710327708474e-15,
+    "soil": 1.039210939960581e-15,
+    "animals": 86
+  },
+  "pageErrors": [],
+  "desktopPass": true,
+  "mobile": {
+    "overflow": false,
+    "mode": true
+  },
+  "syntaxScriptsPassed": 25,
+  "renderPath": "Canvas software depth-buffer renderer (WebGL blocked by test browser)",
+  "testedSeed": 27,
+  "testLimitations": [
+    "Native WebGL path not visually tested",
+    "Desktop Chromium and 390px viewport only",
+    "Short simulation, not long-term ecology regression",
+    "Projection roundtrip is screen reprojection error; occluded surfaces intentionally pick nearest terrain triangle"
+  ]
+}
