@@ -1,0 +1,98 @@
+{
+  "source_sha256": "286bb1beae160fc84327b14235ec5006f4059551fb98d8a5cb432e39a441e5d3",
+  "syntax_scripts": 26,
+  "runs": [
+    {
+      "ready": true,
+      "software": true,
+      "stats": {
+        "ready": true,
+        "error": "",
+        "plants": 205,
+        "channels": 0,
+        "animals": 87,
+        "territories": 0,
+        "species": {
+          "grass": 119,
+          "shrub": 2,
+          "pine": 83,
+          "reed": 1
+        },
+        "vertices": 9000,
+        "indices": 52836
+      },
+      "landFraction": 0.96,
+      "riverRows": 75,
+      "totalRows": 75,
+      "visibleHits": 36,
+      "pick": {
+        "x": 83,
+        "z": 44,
+        "s": [
+          700.1402172276659,
+          393.5525458544241
+        ]
+      },
+      "waterError": 2.6847483571455202e-15,
+      "soilError": 0,
+      "edit": {
+        "before": 8.726249999998837,
+        "after": 8.726249999998851,
+        "error": 1.4210854715202004e-14,
+        "waterError": 2.8467629034754317e-16,
+        "soilError": 0,
+        "status": "落墨 · 地表积墨 · 47 格 (83, 44)"
+      },
+      "requested": "software",
+      "pageErrors": []
+    },
+    {
+      "ready": true,
+      "software": true,
+      "stats": {
+        "ready": true,
+        "error": "",
+        "plants": 207,
+        "channels": 0,
+        "animals": 87,
+        "territories": 0,
+        "species": {
+          "grass": 121,
+          "shrub": 2,
+          "pine": 83,
+          "reed": 1
+        },
+        "vertices": 9000,
+        "indices": 52836
+      },
+      "landFraction": 0.96,
+      "riverRows": 75,
+      "totalRows": 75,
+      "visibleHits": 36,
+      "pick": {
+        "x": 83,
+        "z": 44,
+        "s": [
+          700.1402172276659,
+          393.5525458544241
+        ]
+      },
+      "waterError": 4.623733281750618e-15,
+      "soilError": 0,
+      "edit": {
+        "before": 8.726249999998837,
+        "after": 8.726249999998833,
+        "error": -3.552713678800501e-15,
+        "waterError": 1.4106506105800514e-15,
+        "soilError": 1.697333331441591e-16,
+        "status": "落墨 · 地表积墨 · 47 格 (83, 44)"
+      },
+      "requested": "webgl",
+      "pageErrors": []
+    }
+  ],
+  "limitations": [
+    "Short tests seed 27 only; no long-run stability or physical-device GPU test",
+    "Channel water visual represents lowland classification, not measured discharge; no waterfall yet."
+  ]
+}
