@@ -1,0 +1,49 @@
+{
+  "base_git_blob": "430ecab5ca34fba97288a7a0c3847c6835208943",
+  "source_sha256": "0853b6a02e32fc209ae1245414d8cec307471de013adcc4d8cd25b05f0b10200",
+  "syntax_scripts": 29,
+  "browser": {
+    "ready": true,
+    "software": true,
+    "distanceLayers": 3,
+    "distanceTriangles": 5376,
+    "distanceOutside": true,
+    "plantCount": 214,
+    "plantVertices": 86271,
+    "waterVisual": {
+      "wetCells": 280,
+      "surfaceTriangles": 927,
+      "flowing": 24,
+      "rapids": 0,
+      "falls": 0,
+      "foam": 0,
+      "reflectionSamples": 280,
+      "reflectionHits": 159,
+      "spraySources": 0
+    },
+    "visibleRoundTrips": 104,
+    "occludedOrOutside": 31,
+    "maxPickingError": 1.0965532925454098e-12,
+    "topMisses": 130,
+    "renderStateUnchanged": true,
+    "canvas": [
+      1040,
+      650
+    ]
+  },
+  "mean_forced_rebuild_render_ms": 127.06666666668995,
+  "pigment_after_click": 8.72624999999987,
+  "short_simulation": {
+    "seed": 27,
+    "time": 2.9000000000000012,
+    "waterError": 8.358362293823298e-16,
+    "soilError": 3.055199996594864e-15
+  },
+  "page_errors": [],
+  "limitations": [
+    "One seed; desktop Chromium Canvas fallback; native WebGL not tested.",
+    "Distant ridges are decorative non-interactive meshes outside ecological grid, not simulated terrain.",
+    "Visual quality is subjective; no human blind assessment.",
+    "No long-run stability or physical mobile test."
+  ]
+}
