@@ -1,0 +1,268 @@
+{
+  "source_sha256": "b7440bff08aeaf68c7629ded25d321b1de659933a03e10a981d54be0439dc700",
+  "base_git_blob": "34ddf593019c642a50aafc4d5b83b42b4da6b21f",
+  "syntax_scripts": 28,
+  "runs": [
+    {
+      "ready": true,
+      "software": true,
+      "error": "",
+      "gl": null,
+      "seed": 27,
+      "stats": {
+        "wetCells": 293,
+        "surfaceTriangles": 954,
+        "flowing": 194,
+        "rapids": 9,
+        "falls": 0,
+        "foam": 0,
+        "reflectionSamples": 293,
+        "reflectionHits": 129,
+        "spraySources": 0
+      },
+      "time": 0.2,
+      "fog": {
+        "near": 0.12655983822794348,
+        "far": 0.3367478424834903,
+        "low": 0.2818673632166402,
+        "high": 0.13330660274485162,
+        "off": 0,
+        "sprayFront": 0.5186212978516832,
+        "sprayBehind": 0.2818673632166402
+      },
+      "picking": {
+        "n": 90,
+        "max": 1.1628667390731479e-12
+      },
+      "before": [
+        4.236076907183898,
+        2679.1870663391433,
+        2
+      ],
+      "after": [
+        4.236076907183898,
+        2679.1870663391433,
+        2
+      ],
+      "same": true,
+      "off": true,
+      "fog_pixel_change_bbox": [
+        0,
+        37,
+        1040,
+        613
+      ],
+      "fog_image_changed": true,
+      "controlled": {
+        "sky": {
+          "hit": false,
+          "color": [
+            0.88,
+            0.9,
+            0.86
+          ],
+          "distance": null
+        },
+        "hill": {
+          "hit": true,
+          "color": [
+            0.43270591875000003,
+            0.47116871875000005,
+            0.41133685000000003
+          ],
+          "distance": 0.1334375
+        },
+        "fall": {
+          "wetCells": 1,
+          "surfaceTriangles": 6,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3,
+          "reflectionSamples": 1,
+          "reflectionHits": 1,
+          "spraySources": 1
+        },
+        "spray": [
+          [
+            0,
+            0.1449967966896176,
+            -0.09175833333333337,
+            0.8049844718999243
+          ]
+        ],
+        "reflectionOff": {
+          "wetCells": 1,
+          "surfaceTriangles": 6,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3,
+          "reflectionSamples": 0,
+          "reflectionHits": 0,
+          "spraySources": 1
+        }
+      },
+      "seeds": [
+        {
+          "seed": 27,
+          "waterError": 1.5608028465613736e-15,
+          "soilError": 1.697333331441591e-16,
+          "time": 2.0000000000000004
+        },
+        {
+          "seed": 91,
+          "waterError": 9.535426587753378e-16,
+          "soilError": 1.6942165124296937e-16,
+          "time": 2.0000000000000004
+        },
+        {
+          "seed": 173,
+          "waterError": 3.329058702994607e-16,
+          "soilError": 1.8673808980351118e-15,
+          "time": 2.0000000000000004
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "ready": true,
+      "software": true,
+      "error": "",
+      "gl": null,
+      "seed": 27,
+      "stats": {
+        "wetCells": 293,
+        "surfaceTriangles": 954,
+        "flowing": 194,
+        "rapids": 9,
+        "falls": 0,
+        "foam": 0,
+        "reflectionSamples": 293,
+        "reflectionHits": 129,
+        "spraySources": 0
+      },
+      "time": 0.2,
+      "fog": {
+        "near": 0.12655983822794348,
+        "far": 0.3367478424834903,
+        "low": 0.2818673632166402,
+        "high": 0.13330660274485162,
+        "off": 0,
+        "sprayFront": 0.5186212978516832,
+        "sprayBehind": 0.2818673632166402
+      },
+      "picking": {
+        "n": 90,
+        "max": 1.1628667390731479e-12
+      },
+      "before": [
+        4.236076907183898,
+        2679.1870663391433,
+        2
+      ],
+      "after": [
+        4.236076907183898,
+        2679.1870663391433,
+        2
+      ],
+      "same": true,
+      "off": true,
+      "fog_pixel_change_bbox": [
+        0,
+        37,
+        1040,
+        613
+      ],
+      "fog_image_changed": true,
+      "controlled": {
+        "sky": {
+          "hit": false,
+          "color": [
+            0.88,
+            0.9,
+            0.86
+          ],
+          "distance": null
+        },
+        "hill": {
+          "hit": true,
+          "color": [
+            0.43270591875000003,
+            0.47116871875000005,
+            0.41133685000000003
+          ],
+          "distance": 0.1334375
+        },
+        "fall": {
+          "wetCells": 1,
+          "surfaceTriangles": 6,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3,
+          "reflectionSamples": 1,
+          "reflectionHits": 1,
+          "spraySources": 1
+        },
+        "spray": [
+          [
+            0,
+            0.1449967966896176,
+            -0.09175833333333337,
+            0.8049844718999243
+          ]
+        ],
+        "reflectionOff": {
+          "wetCells": 1,
+          "surfaceTriangles": 6,
+          "flowing": 1,
+          "rapids": 0,
+          "falls": 1,
+          "foam": 3,
+          "reflectionSamples": 0,
+          "reflectionHits": 0,
+          "spraySources": 1
+        }
+      },
+      "seeds": [
+        {
+          "seed": 27,
+          "waterError": 1.5608028465613736e-15,
+          "soilError": 1.697333331441591e-16,
+          "time": 2.0000000000000004
+        },
+        {
+          "seed": 91,
+          "waterError": 9.535426587753378e-16,
+          "soilError": 1.6942165124296937e-16,
+          "time": 2.0000000000000004
+        },
+        {
+          "seed": 173,
+          "waterError": 3.329058702994607e-16,
+          "soilError": 1.8673808980351118e-15,
+          "time": 2.0000000000000004
+        }
+      ],
+      "pageErrors": []
+    }
+  ],
+  "limitations": [
+    "Both requested browser configurations used Canvas fallback: native WebGL shader compile/render and physical GPU remain unverified.",
+    "The reflection term is a locally horizontal heightfield-ray color approximation; no mirrored tree or animal silhouettes or physically modeled water-surface normals.",
+    "Mist is an analytic height-fog extinction approximation with bounded local spray contributions, not fluid CFD. Waterfall spray tested with a controlled flow edge; initial natural world had no falls.",
+    "Short simulations only; no mobile or long-run performance/stability validation.",
+    "Rendered screenshot still has a terrain-model / sandbox appearance; no additional background mountains or static generated art used."
+  ],
+  "checks": {
+    "syntax": true,
+    "both_canvas_fallback": true,
+    "fog_toggles_preserve_world": true,
+    "fog_changes_pixels": true,
+    "controlled_sky_vs_terrain": true,
+    "controlled_spray_in_front": true,
+    "controlled_reflection_toggle": true,
+    "no_page_errors": true
+  }
+}
