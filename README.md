@@ -32,6 +32,8 @@
 
 ## 研发记录
 
+- [水墨瀑布交互实验 V0.1](research/ink-animation/waterfall-v0.1.html)
+- [水墨瀑布实验报告 V0.1](research/ink-animation/WATERFALL-V0.1.md)
 - [水墨时序表达引擎研究](research/ink-animation/RESEARCH.md)
 - [V1.17 性能与精度报告](docs/V1.17-performance.md)
 - [V1.17 自适应方向场回归测试](research/v1.17/ridge-adaptive-performance.js)
