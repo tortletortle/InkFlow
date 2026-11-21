@@ -32,6 +32,7 @@
 
 ## 研发记录
 
+- [水墨时序表达引擎研究](research/ink-animation/RESEARCH.md)
 - [V1.17 性能与精度报告](docs/V1.17-performance.md)
 - [V1.17 自适应方向场回归测试](research/v1.17/ridge-adaptive-performance.js)
 - [V1.16 GPU/软件渲染管线说明](docs/V1.16-rendering-pipeline.md)
