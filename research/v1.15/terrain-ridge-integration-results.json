@@ -62,14 +62,16 @@
       "maxAbs": 0.032904
     },
     "contrastCalibration": {
-      "generatedTerrainSeed": 27,
+      "terrainSeed": 27,
+      "resolution": "40x26",
       "acceptedRidgeSamples": 196,
-      "baselineRockWashStd": 0.010902,
-      "directionalWashStd": 0.005971,
-      "directionalToBaselineStdPct": 54.8,
-      "combinedMaterialStd": 0.012166,
-      "combinedStdIncreasePct": 11.6,
-      "maxAbsDirectionalWash": 0.021094
+      "baselineRockWashStd": 0.01333,
+      "directionalWashStd": 0.006843,
+      "directionalToBaselineStdPct": 51.3,
+      "combinedMaterialStd": 0.014823,
+      "combinedStdIncreasePct": 11.2,
+      "maxAbsDirectionalWash": 0.027721,
+      "slopeFromProductionMeshNormals": true
     }
   },
   "limitations": [
