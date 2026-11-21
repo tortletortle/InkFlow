@@ -1085,7 +1085,7 @@ function ridgeAlignedWash(x,z,nx,nz,confidence,steep=1){
   const length=Math.hypot(nx,nz);if(length<1e-6)return 0;
   const ux=nx/length,uz=nz/length,tx=-uz,tz=ux,across=x*ux+z*uz,along=x*tx+z*tz;
   const broad=washNoise(across*12.5,along*3.2,1715)-.5,fine=washNoise(across*27,along*6.8,2718)-.5;
-  return (broad*.68+fine*.32)*.020*c*(.45+.55*ridgeClamp(steep));
+  return (broad*.68+fine*.32)*.100*c*(.45+.55*ridgeClamp(steep));
 }
 function rockWash(x,y,z,steep=1,nx=0,nz=0,ridgeConfidence=0){
   const warp=(washNoise(x*8,z*7)-.5)*1.6,a=washNoise(x*23+y*13+warp,z*5+y*16,313),b=washNoise(x*69+y*31+warp,z*14+y*36,911),c=washNoise(x*9,z*10,711);
