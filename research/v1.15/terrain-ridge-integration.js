@@ -8,10 +8,11 @@ const html = fs.readFileSync(htmlPath, 'utf8');
 const marker = '/* V1.15 ridge-aware terrain material:';
 const start = html.indexOf(marker), end = html.indexOf('class Terrain3D{', start);
 assert.ok(start >= 0 && end > start, 'Could not extract the production ridge-field helper');
-const api = new Function(html.slice(start, end) + '\nreturn { buildRidgeField, ridgeAlignedWash };')();
+const api = new Function(html.slice(start, end) + '\nreturn { buildRidgeField, ridgeAlignedWash, rockWash };')();
 function rng(seed) { let s = seed >>> 0; return () => ((s = (Math.imul(1664525, s) + 1013904223) >>> 0) / 4294967296); }
 function axialError(a, b) { return Math.acos(Math.min(1, Math.abs(Math.cos(a - b)))) * 180 / Math.PI; }
 function mean(a) { return a.reduce((x, y) => x + y, 0) / Math.max(1, a.length); }
+function standardDeviation(a) { const m = mean(a); return Math.sqrt(mean(a.map(x => (x - m) ** 2))); }
 function percentile(a, p) { const sorted = a.slice().sort((x, y) => x - y); return sorted[Math.floor(p * (sorted.length - 1))]; }
 const width = 40, height = 26, dx = 3.35 / (width - 1), dz = 2.42 / (height - 1);
 const straightErrors = [], straightAccepted = [];
@@ -79,6 +80,33 @@ for (const [w, h] of [[40,26],[64,40]]) {
 const generated = { cases:terrainCases.length, landCoverageMinPct:Math.min(...terrainCases.map(x=>x.landCoveragePct)), landCoverageMaxPct:Math.max(...terrainCases.map(x=>x.landCoveragePct)), meanConfidence:+mean(terrainCases.map(x=>x.meanConfidence)).toFixed(3), meanNeighborAngleDeg:+mean(terrainCases.map(x=>x.neighborAngleMeanDeg)).toFixed(2), invalidValues:terrainCases.reduce((sum,x)=>sum+x.invalidValues,0) };
 assert.ok(generated.landCoverageMinPct>15&&generated.landCoverageMaxPct<30,'Unexpected ridge-field coverage');
 assert.equal(generated.invalidValues,0,'Non-finite ridge-field values detected');
+const calibrationTerrain=generatedTerrain(40,26,27,'deep');
+const calibrationField=api.buildRidgeField(calibrationTerrain.fieldHeight,calibrationTerrain.land,40,26,3.35/39,2.42/25,1.3);
+const baselineWash=[],directionalWash=[],combinedWash=[],calibrationScale=1.32;
+for(let z=0;z<26;z++)for(let x=0;x<40;x++){
+  const i=z*40+x;if(!calibrationTerrain.land[i])continue;
+  const nx=calibrationField[i*3],nz=calibrationField[i*3+1],confidence=calibrationField[i*3+2];
+  if(confidence<0.25)continue;
+  const left=calibrationTerrain.fieldHeight[z*40+Math.max(0,x-1)],right=calibrationTerrain.fieldHeight[z*40+Math.min(39,x+1)];
+  const up=calibrationTerrain.fieldHeight[Math.max(0,z-1)*40+x],down=calibrationTerrain.fieldHeight[Math.min(25,z+1)*40+x];
+  const gx=-(right-left)*calibrationScale/(2*(3.35/39)),gz=-(down-up)*calibrationScale/(2*(2.42/25));
+  const steep=1-1/Math.hypot(gx,1,gz),X=(x/39-0.5)*3.35,Z=(z/25-0.5)*2.42,Y=(calibrationTerrain.fieldHeight[i]-0.008)*calibrationScale;
+  baselineWash.push(api.rockWash(X,Y,Z,steep,0,0,0));
+  directionalWash.push(api.ridgeAlignedWash(X,Z,nx,nz,confidence,steep));
+  combinedWash.push(api.rockWash(X,Y,Z,steep,nx,nz,confidence));
+}
+const contrastCalibration={
+  terrainSeed:27,resolution:'40x26',acceptedRidgeSamples:baselineWash.length,
+  baselineRockWashStd:+standardDeviation(baselineWash).toFixed(6),
+  directionalWashStd:+standardDeviation(directionalWash).toFixed(6),
+  directionalToBaselineStdPct:+(100*standardDeviation(directionalWash)/standardDeviation(baselineWash)).toFixed(1),
+  combinedMaterialStd:+standardDeviation(combinedWash).toFixed(6),
+  combinedStdIncreasePct:+(100*(standardDeviation(combinedWash)/standardDeviation(baselineWash)-1)).toFixed(1),
+  maxAbsDirectionalWash:+Math.max(...directionalWash.map(Math.abs)).toFixed(6),
+  slopeFromProductionMeshNormals:true
+};
+assert.ok(contrastCalibration.directionalToBaselineStdPct>30&&contrastCalibration.directionalToBaselineStdPct<70,'Directional wash contrast is outside the calibrated range');
+assert.ok(contrastCalibration.combinedStdIncreasePct>5&&contrastCalibration.combinedStdIncreasePct<20,'Combined material contrast changed unexpectedly');
 const flatHeight=new Float64Array(width*height),flatLand=new Uint8Array(width*height).fill(1),random=rng(88);
 for(let i=0;i<flatHeight.length;i++)flatHeight[i]=0.1+0.003*(2*random()-1);
 const flatField=api.buildRidgeField(flatHeight,flatLand,width,height,dx,dz,1.3);
@@ -88,5 +116,5 @@ const washSamples=[];
 for(let i=0;i<1000;i++)washSamples.push(api.ridgeAlignedWash((i%40)/12,Math.floor(i/40)/12,0.6,0.8,(i%100)/100,(i%10)/10));
 const wash={samples:washSamples.length,min:+Math.min(...washSamples).toFixed(6),max:+Math.max(...washSamples).toFixed(6),allFinite:washSamples.every(Number.isFinite),maxAbs:+Math.max(...washSamples.map(Math.abs)).toFixed(6)};
 assert.ok(wash.allFinite&&wash.maxAbs<0.05,'Directional wash exceeded its intended subtle amplitude');
-const result={experiment:'InkFlow V1.15 ridge-aware terrain integration validation',implementation:'buildRidgeField and ridgeAlignedWash extracted from the production HTML',parameters:{gaussianSigmaCells:1.3,confidenceAcceptanceThreshold:0.25,ridgeWidthWorldUnits:0.31,straightNoiseAmplitudes:[0,0.003,0.01,0.02],straightAnglesDeg:[0,17,43,79,121,158],seeds:[27,91,173]},results:{straightRidges:straight,curvedRidge:curved,generatedTerrain:generated,flatNoise:{maxConfidence:flatMaxConfidence},directionalWash:wash},generatedTerrainCases:terrainCases,limitations:['Straight and curved Gaussian ridge tests measure direction recovery on synthetic fields, not perceived art quality.','Generated terrain tests mirror the current EcoSim initial height-field formula; they do not run the full ecological simulation.','No real-browser WebGL screenshot, GPU compatibility, frame-rate, or long-duration ecological regression test was performed.']};
+const result={experiment:'InkFlow V1.15 ridge-aware terrain integration validation',implementation:'buildRidgeField and ridgeAlignedWash extracted from the production HTML',parameters:{gaussianSigmaCells:1.3,confidenceAcceptanceThreshold:0.25,ridgeWidthWorldUnits:0.31,straightNoiseAmplitudes:[0,0.003,0.01,0.02],straightAnglesDeg:[0,17,43,79,121,158],seeds:[27,91,173]},results:{straightRidges:straight,curvedRidge:curved,generatedTerrain:generated,contrastCalibration,flatNoise:{maxConfidence:flatMaxConfidence},directionalWash:wash},generatedTerrainCases:terrainCases,limitations:['Straight and curved Gaussian ridge tests measure direction recovery on synthetic fields, not perceived art quality.','Generated terrain tests mirror the current EcoSim initial height-field formula; they do not run the full ecological simulation.','No real-browser WebGL screenshot, GPU compatibility, frame-rate, or long-duration ecological regression test was performed.']};
 console.log(JSON.stringify(result,null,2));
