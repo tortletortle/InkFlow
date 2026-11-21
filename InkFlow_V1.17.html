@@ -1181,7 +1181,7 @@ class Terrain3D{
     this.surfaceEco=eco;
     const ridgeKey=w+'x'+h+'|'+eco.seed+'|'+(eco.surfaceRevision||0),ridgeTime=Number.isFinite(eco.time)?eco.time:0;
     if(force||this.ridgeEco!==eco||this.ridgeFieldKey!==ridgeKey||ridgeTime<this.ridgeFieldTime||ridgeTime-this.ridgeFieldTime>=.6){
-      const ridgeW=w>160?120:80,ridgeH=h>100?75:50;
+      const ridgeW=w>160?80:60,ridgeH=h>100?50:38;
       this.ridgeField=buildAdaptiveRidgeField(smooth,eco.land,w,h,dx,dz,1.3,ridgeW,ridgeH);
       this.ridgeEco=eco;this.ridgeFieldKey=ridgeKey;this.ridgeFieldTime=ridgeTime;
     }
