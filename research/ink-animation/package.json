@@ -1,0 +1,8 @@
+{
+  "name": "inkflow-waterfall-experiment",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test ink-medium.test.mjs"
+  }
+}
