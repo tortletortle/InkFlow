@@ -1,0 +1,70 @@
+{
+  "experiment": "InkFlow V1.15 ridge-aware terrain integration validation",
+  "recorded_at": "2026-11-21",
+  "implementation": "buildRidgeField and ridgeAlignedWash extracted from the production HTML",
+  "parameters": {
+    "gaussianSigmaCells": 1.3,
+    "confidenceAcceptanceThreshold": 0.25,
+    "ridgeWidthWorldUnits": 0.31,
+    "straightNoiseAmplitudes": [
+      0,
+      0.003,
+      0.01,
+      0.02
+    ],
+    "straightAnglesDeg": [
+      0,
+      17,
+      43,
+      79,
+      121,
+      158
+    ],
+    "seeds": [
+      27,
+      91,
+      173
+    ]
+  },
+  "results": {
+    "straightRidges": {
+      "cases": 72,
+      "acceptedSamples": 6216,
+      "meanErrorDeg": 0.283,
+      "p90ErrorDeg": 0.635,
+      "maxErrorDeg": 2.593,
+      "meanAcceptedPerCase": 86.3
+    },
+    "curvedRidge": {
+      "seeds": 3,
+      "acceptedSamples": 306,
+      "meanErrorDeg": 0.534,
+      "p90ErrorDeg": 1.047,
+      "maxErrorDeg": 1.535
+    },
+    "generatedTerrain": {
+      "cases": 30,
+      "landCoverageMinPct": 19.2,
+      "landCoverageMaxPct": 24.2,
+      "meanConfidence": 0.595,
+      "meanNeighborAngleDeg": 9.5,
+      "invalidValues": 0
+    },
+    "flatNoise": {
+      "noiseAmplitude": 0.003,
+      "maxConfidence": 0
+    },
+    "directionalWash": {
+      "samples": 1000,
+      "min": -0.006177,
+      "max": 0.006581,
+      "allFinite": true,
+      "maxAbs": 0.006581
+    }
+  },
+  "limitations": [
+    "Straight and curved Gaussian ridge tests measure direction recovery on synthetic fields, not perceived art quality.",
+    "Generated terrain tests mirror the current EcoSim initial height-field formula; they do not run the full ecological simulation.",
+    "No real-browser WebGL screenshot, GPU compatibility, frame-rate, or long-duration ecological regression test was performed."
+  ]
+}
